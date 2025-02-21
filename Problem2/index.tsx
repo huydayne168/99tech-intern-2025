@@ -90,23 +90,3 @@ const WalletPage: React.FC<Props> = (props: Props) => {
 
     return <div {...rest}>{rows}</div>;
 };
-
-function so_bi_an(arr) {
-    let left = 0;
-    let total = 0;
-    let isOke = false;
-    for (let i = 0; i < arr.length; i++) {
-        total += arr[i];
-    }
-    for (let i = 0; i < arr.length; i++) {
-        total -= arr[i];
-        if (left === total) {
-            isOke = true;
-            break;
-        }
-        left += arr[i];
-    }
-    if (isOke) {
-        return "YES";
-    } else return "NO";
-}
