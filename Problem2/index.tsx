@@ -4,6 +4,7 @@
  * 2. Change the type of the argument in the getPriority function from 'any' to 'string'.
  * 3. Change interface FormattedWalletBalance to extend WalletBalance.
  * 4. Refactor the sort and filter functions in the useMemo function.
+   ...
  */
 
 interface WalletBalance {
